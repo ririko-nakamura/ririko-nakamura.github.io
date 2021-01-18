@@ -1,0 +1,39 @@
+<html>
+
+    <head>
+        <title> Idol Profile - Ririko.io@Idol </title>
+        <link rel="stylesheet" href="src/idol/styles/idolpage.css">
+        <script src="src/idol/idol.js"></script>
+        <script>
+            function idolInit() {
+                // TODO: 
+                const idolSelector = document.getElementById("idol-selector");
+                idolSelector.innerHTML = "Hello JavaScript";
+            }
+            function showSelectedIdol() {
+                const idolSelector = document.getElementById("idol-selector");
+                showIdol();
+            }
+        </script>
+    </head>
+
+    <body onload="idolInit()">
+        <p id="idol-page-header"> Idol Profile</p>
+        <div id="idol-selector"> Idol Selector</div>
+        <div id="idol-profile">
+            <div id="profile">
+                profile
+            </div>
+            <div id="live-skill">
+                live-skill
+            </div>
+            <div id="support-skill">
+                support-skill
+            </div>
+            <div id="passive-skill">
+                passive-skill
+            </div>
+        </div>
+    </body>
+
+</html>
