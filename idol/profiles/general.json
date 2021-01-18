@@ -1,0 +1,71 @@
+{
+    "profile": {
+        "name": "",
+        "age": "永远的20岁",
+        "birthday": [1, 25],
+        "height": "177cm",
+        "weight": "-CENSORED- 调整中",
+        "measurements": "-CENSORED- 调整中",
+        "blood-type": "A",
+        "dominant-hand": "右",
+        "birthplace": "山西",
+        "kyoumi": "",
+        "stunt": "",
+        "interests": ""
+    },
+
+    "status": {
+        "vocal": 231,
+        "dance": 287,
+        "visual": 113,
+        "mental": 413,
+        "star": 2,
+        "level": 33
+    },
+
+    "live-skill": [
+        {
+            "name": "彩虹节拍",
+            "name-jp": "",
+            "type": "Dance",
+            "star": 1,
+            "effect": "Da3倍Appeal/注目度30%UP[3T]",
+            "effect-jp": "",
+            "panel": "11"
+        },
+        {
+            "name": "向秋风挥手",
+            "name-jp": "",
+            "type": "VocalPerfect",
+            "star": 2,
+            "effect": "Vo0.7倍Appeal[Perfect时3.5倍Appeal]/注目度50%UP[3T]",
+            "effect-jp": "",
+            "panel": "32"
+        },
+        {
+            "name": "爱的旋律",
+            "name-jp": "",
+            "type": "Dance",
+            "star": 4,
+            "effect": "Da4倍Appeal/Dance50%UP[5T]/注目度100%UP[3T]",
+            "effect-jp": "",
+            "panel": "41"
+        }
+    ],
+
+    "support-skill": [
+        {
+            "name": "节奏精通Vo/Da",
+            "name-jp": "",
+            "level": [2, 3, 4, 6],
+            "level-mapping": [10, 40, 60, 70],
+            "effect": "一同进行Vocal/Dance训练时，Vo与Da各额外上升",
+            "effect-jp": "",
+            "effect-multipiler": 1
+        }
+    ],
+
+    "passive-skill": [
+
+    ]
+}

@@ -1,0 +1,11 @@
+#tag-bar {
+    vertical-align: middle;
+}
+
+.tag {
+    width: 100px;
+}
+
+.activated-tag {
+    width: 200px;
+}
