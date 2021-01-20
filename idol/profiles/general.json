@@ -57,9 +57,18 @@
         {
             "name": "节奏精通Vo/Da",
             "name-jp": "",
+            "level": [4, 6, 8],
+            "level-mapping": [40, 60, 70],
+            "effect": "一同进行Vocal/Dance训练时，Vo与Da各额外上升{Lv*1}",
+            "effect-jp": "",
+            "effect-multipiler": 1
+        },
+        {
+            "name": "形象激励SP",
+            "name-jp": "",
             "level": [2, 3, 4, 6],
             "level-mapping": [10, 40, 60, 70],
-            "effect": "一同进行Vocal/Dance训练时，Vo与Da各额外上升",
+            "effect": "每与一个Visual高于自身的偶像一同进行Visual训练时，额外获得{Lv*1}SP",
             "effect-jp": "",
             "effect-multipiler": 1
         }
