@@ -1,11 +1,36 @@
+function loadTextFileAjaxSync(filePath, mimeType)
+{
+    var xmlhttp=new XMLHttpRequest();
+    xmlhttp.open("GET",filePath,false);
+    if (mimeType != null) {
+        if (xmlhttp.overrideMimeType) { 
+            xmlhttp.overrideMimeType(mimeType);
+        }
+    }
+    xmlhttp.send();
+    if (xmlhttp.status==200 && xmlhttp.readyState == 4 )
+    {
+        return xmlhttp.responseText;
+    }
+    else {
+        // TODO Throw exception
+        return null;
+    }
+}
+
 function loadJSON(url) {
+    /*
     var request = new XMLHttpRequest();
     request.open("GET", url);
     request.send(null);
     request.onload = () => {
         if(request.status == 200)
             var json = JSON.parse(request.responseText);
+            return json;
     }
+    */
+    var json = loadTextFileAjaxSync(url, "application/json");
+    return JSON.parse(json);
 }
 
 function useMobileLayout() {
@@ -26,3 +51,5 @@ function useMobileLayout() {
     }
     return flag;
 }
+
+const httpRoot = "http://localhost:49152"

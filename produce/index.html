@@ -2,9 +2,25 @@
 <html>
 
     <head>
+        <script src="../common/helper.js"></script>
+        <script>
+            function producerInit() {
+                var url = self.location.href;
+                var data = loadJSON(httpRoot + "/idol" + "/profiles/general.json");
+                const pProfile = document.getElementById("producer-profile");
+                pProfile.innerText = JSON.stringify(data);
+                //pProfile.innerText = 
+                //    "Name:" + data["profile"]["name"] + "\n";
+            }
+        </script>
     </head>
     
-    <body>
-        <p style="text-align:center;"> UNDER CONSTRUCTION </p>
+    <body onload="producerInit()">
+        <div>
+            <div id="producer-profile"></div>
+            <div id="meshi-gallery"></div>
+        </div>
     </body>
+
+
 </html>
