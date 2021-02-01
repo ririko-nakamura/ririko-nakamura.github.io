@@ -1,0 +1,39 @@
+{
+    "profile": {
+        "name": "中村 凛々子",
+        "affinity": "上海支部-同济大学营业所",
+        "produce-style": "",
+        "comment": ""
+    },
+
+    "produce-idols": [
+        {
+            "name": "涩谷凛",
+            "name-jp": "",
+            "image-color": "#0390d5"
+        },
+        {
+            "name": "乙仓悠贵",
+            "name-jp": "",
+            "image-color": "#f2c0c1"
+        },
+        {
+            "name": "高山纱代子",
+            "name-jp": "",
+            "image-color": "#7f6575"
+        }
+    ],
+
+    "achievements": [
+        {
+            "event-name": "LIVE Groove Vocal Burst",
+            "ranking": 10000,
+            "badge": "$/resorces/badge-10000.png"
+        }
+
+    ],
+
+    "passive-skill": [
+
+    ]
+}

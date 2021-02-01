@@ -1,0 +1,37 @@
+body {
+    background-color: antiquewhite;
+}
+
+#main {
+    width: 800px;
+    position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+#producer-profile {
+    margin-bottom: 20px;
+}
+
+#producer-name {
+    font-size: 30px;
+}
+
+#produce-idols {
+    text-align: center;
+}
+
+.foreign-lang-reminder {
+    font-size: 15px;
+}
+
+.pIdol {
+    height: 60px;
+    width: 200px;
+    margin: 5px;
+    display: inline-block;
+}
+
+#produce-records {
+    text-align: center;
+}

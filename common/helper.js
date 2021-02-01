@@ -52,4 +52,12 @@ function useMobileLayout() {
     return flag;
 }
 
-const httpRoot = "http://localhost:49152"
+function createChildP(parent, text) {
+    const newNode = document.createElement("p");
+    newNode.innerText = text;
+    parent.appendChild(newNode);
+    return newNode;
+}
+
+//const httpRoot = "http://localhost:8080"
+const httpRoot = "http://ririko.io"
