@@ -60,4 +60,4 @@ function createChildP(parent, text) {
 }
 
 //const httpRoot = "http://localhost:8080"
-const httpRoot = "http://ririko.io"
+const httpRoot = "http://www.ririko.io"
