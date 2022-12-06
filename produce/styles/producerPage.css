@@ -17,7 +17,7 @@ body {
     font-size: 30px;
 }
 
-#produce-idols {
+#produce-idols, #meshi-gallery, #produce-records, #contacts {
     text-align: center;
 }
 
@@ -27,11 +27,28 @@ body {
 
 .pIdol {
     height: 60px;
-    width: 200px;
+    width:  200px;
     margin: 5px;
     display: inline-block;
 }
 
-#produce-records {
-    text-align: center;
+.pProduceRecord, .pInGameProduceRecord, .pMeshi {
+    position: relative;
+    height: 225px;
+    width:  300px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width:  100%;
+    margin: 0px;
+}
+
+.pInGameProduceRecord>#badge {
+
 }

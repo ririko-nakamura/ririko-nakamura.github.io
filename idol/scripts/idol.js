@@ -1,5 +1,5 @@
-import {loadJSON} from "../../common/helper.js";
-import {liveSkill, supportSkill, passiveSkill} from "skill.js";
+import {loadJSON} from "../common/helper.js";
+import {liveSkill, supportSkill, passiveSkill} from "scripts/skill.js";
 
 class idol {
 

@@ -1,7 +1,7 @@
 {
     "profile": {
         "name": "中村 凛々子",
-        "affinity": "上海支部-同济大学营业所",
+        "affinity": "上海支部",
         "produce-style": "",
         "comment": ""
     },
@@ -24,16 +24,43 @@
         }
     ],
 
-    "achievements": [
+    "produce-records": [
         {
+            "type": "IGA",
+            "game": "CGSS",
+            "event-type": "groove",
+            "event-name": "LIVE Groove Vocal Burst",
+            "ranking": 10000,
+            "badge": "$/resorces/badge-10000.png"
+        },
+        {
+            "type": "P",
+            "game": "CGSS",
+            "event-type": "groove",
             "event-name": "LIVE Groove Vocal Burst",
             "ranking": 10000,
             "badge": "$/resorces/badge-10000.png"
         }
-
     ],
 
-    "passive-skill": [
+    "meshi-designs": [
+        {
+            "title": "General (Rin / Chihaya)",
+            "brands": ["CG", "765"],
+            "image": "$/resorces/meshi-general-legacy.png"
+        },
+        {
+            "title": "Million Live (Sayoko)",
+            "brands": ["ML"],
+            "image": "$/resorces/meshi-ml-sayoko.png"
+        }
+    ],
 
-    ]
+    "contacts": {
+        "twitter": null,
+        "weibo": null,
+        "QQ": null,
+        "email": null,
+        "github": null
+    }
 }

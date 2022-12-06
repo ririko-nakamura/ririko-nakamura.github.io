@@ -2,48 +2,25 @@
 <html>
 
     <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
         <title> Producer Profile - Ririko.io@Produce </title>
         <link rel="stylesheet" href="styles/producerPage.css">
-        <script src="scripts/producer.js"></script>
         <script src="../common/helper.js"></script>
-        <script>
-            function producerInit() {
-                var url = self.location.href;
-                var data = loadJSON(httpRoot + "/produce/profiles" + "/profile.json");
-
-                genPProfile(data.profile);
-                genPIdolList(data["produce-idols"]);
-            }
-
-            function genPProfile(profile) {
-                const pProfile = document.getElementById("producer-profile");
-                const pAffinity = createChildP(pProfile, profile.affinity);
-                const pName = createChildP(pProfile, profile.name);
-                pName.setAttribute("id", "producer-name");
-            }
-
-            function genPIdolList(idolList) {
-                const pIdolList = document.getElementById("produce-idols");
-                for (const index in idolList) {
-                    const idol = idolList[index];
-                    const idolNode = document.createElement("div");
-                    idolNode.className = "pIdol";
-                    idolNode.setAttribute("style", "background-color: " + idol["image-color"]);
-                    pIdolList.appendChild(idolNode);
-                    const nameNode = createChildP(idolNode, idol["name"]);
-                    nameNode.setAttribute("style", "background-color: " + idol["image-color"]);
-                }
-            }
-
-        </script>
+        <script type="module" src="./scripts/producer.js"></script>
     </head>
     
-    <body onload="producerInit()">
+    <body id="producer-page">
         <div id="main">
             <div id="producer-profile"></div>
             <div id="produce-idols">
                 <p>担当偶像</p>
-                <p class="foreign-lang-reminder">担当アイドル / Producing Idols</p>
+                <p class="foreign-lang-reminder"> 担当アイドル / Producing Idols</p>
+                <hr>
+            </div>
+            <div id="meshi-gallery">
+                <p>名片</p>
+                <p class="foreign-lang-reminder"> 名刺 / Name Card Gallery</p>
                 <hr>
             </div>
             <div id="produce-records">
@@ -51,10 +28,12 @@
                 <p class="foreign-lang-reminder"> 実績 / Produce Records</p>
                 <hr>
             </div>
-            <div id="meshi-gallery"></div>
-            <div id="contacts"></div>
+            <div id="contacts">
+                <p>联系方式</p>
+                <p class="foreign-lang-reminder"> 連絡先 / Contacts</p>
+                <hr>
+            </div>
         </div>
     </body>
-
 
 </html>
