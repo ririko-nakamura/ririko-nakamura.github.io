@@ -1,4 +1,5 @@
 import pRecord from "./record.js";
+import pMeshi from "./meshi.js";
 
 window.addEventListener('load', producerInit);
 
@@ -6,7 +7,9 @@ function producerInit() {
     var data = loadJSON("../produce/profiles" + "/profile.json");
     genPProfile(data.profile);
     genPIdolList(data["produce-idols"]);
+    genPMeshiGallery(data["meshi-designs"]);
     genPRecordList(data["produce-records"]);
+    genContacts(data["contacts"]);
 }
 
 function genPProfile(profile) {
@@ -35,4 +38,16 @@ function genPRecordList(recordList) {
         const record = recordList[index];
         pRecordList.appendChild(new pRecord(record).node);
     }
+}
+
+function genPMeshiGallery(meshiList) {
+    const pMeshiGallery = document.getElementById("meshi-gallery");
+    for (const index in meshiList) {
+        const meshi = meshiList[index];
+        pMeshiGallery.appendChild(new pMeshi(meshi).node);
+    }
+}
+
+function genPContacts(contacts) {
+    
 }

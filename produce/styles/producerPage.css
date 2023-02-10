@@ -32,9 +32,25 @@ body {
     display: inline-block;
 }
 
-.pProduceRecord, .pInGameProduceRecord, .pMeshi {
+.pProduceRecord, .pInGameProduceRecord {
     position: relative;
     height: 225px;
+    width:  300px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.pMeshi {
+    position: relative;
+    height: 180px;
+    width:  300px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.pMeshiJP {
+    position: relative;
+    height: 180px;
     width:  300px;
     margin: 10px;
     display: inline-block;

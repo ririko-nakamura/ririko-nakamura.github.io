@@ -19,15 +19,16 @@ export default class pRecord {
             this.visio.setAttribute("style", "z-index: 1; background-color: black");
 
             // info layer
-            this.info.setAttribute("style", "z-index: 2");
+            this.info.setAttribute("style", "z-index: 2; background-color: white");
 
 
         } else if (record["type"] == "P") {
             this.node.className = "pProduceRecord";
-            //this.node.setAttribute("style", "z-index: 0");
+            
             // hover to show participation list (mobile: flip button)
-            this.node.onmouseenter = function(){swap()};
-            this.node.onmouseout   = function(){swap()};
+            var self = this
+            this.node.onmouseenter = function(){self.swap()};
+            this.node.onmouseleave = function(){self.swap()};
 
             // video / book / project main visio
             this.visio.setAttribute("style", "");
@@ -35,18 +36,17 @@ export default class pRecord {
 
             // info layer
             this.info.setAttribute("style", "");
-            this.visio.setAttribute("style", "z-index: 1; background-color: white");
-            
+            this.info.setAttribute("style", "z-index: 1; background-color: white");
 
         }
 
     }
 
     swap() {
-        info_z_index  = this.info.getAttribute("style")["z-index"];
-        visio_z_index = this.visio.getAttribute("style")["z-index"];
-        this.info.setAttribute("style", "z-index: " + visio_z_index);
-        this.visio.setAttribute("style", "z-index: " + info_z_index);
+        var info_z_index   = this.info.style.zIndex;
+        var visio_z_index  = this.visio.style.zIndex;
+        this.info.style.zIndex  = visio_z_index;
+        this.visio.style.zIndex = info_z_index;
     }
 
 }

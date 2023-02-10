@@ -31,7 +31,7 @@
             "event-type": "groove",
             "event-name": "LIVE Groove Vocal Burst",
             "ranking": 10000,
-            "badge": "$/resorces/badge-10000.png"
+            "badge": "../resources/badge-10000.png"
         },
         {
             "type": "P",
@@ -39,20 +39,20 @@
             "event-type": "groove",
             "event-name": "LIVE Groove Vocal Burst",
             "ranking": 10000,
-            "badge": "$/resorces/badge-10000.png"
+            "badge": "../resources/badge-10000.png"
         }
     ],
 
     "meshi-designs": [
         {
-            "title": "General (Rin / Chihaya)",
-            "brands": ["CG", "765"],
-            "image": "$/resorces/meshi-general-legacy.png"
+            "title": "General (Rin / Yuuki)",
+            "brands": ["CG"],
+            "image": "./resources/meshi-cg-general.png"
         },
         {
             "title": "Million Live (Sayoko)",
             "brands": ["ML"],
-            "image": "$/resorces/meshi-ml-sayoko.png"
+            "image": "./resources/meshi-ml-sayoko.png"
         }
     ],
 
@@ -61,6 +61,6 @@
         "weibo": null,
         "QQ": null,
         "email": null,
-        "github": null
+        "github": "ririko-nakamura"
     }
 }
